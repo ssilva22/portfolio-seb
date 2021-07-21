@@ -41,7 +41,7 @@ const portfolios = [
         category: 'React',
         image: amazon,
         link1: 'https://github.com/ssilva22/amazon-clone',
-        link2: 'https://www.google.com',
+        link2: 'https://amazon-next-beta.vercel.app/',
         title: 'Amazon-Clone Desktop',
         text: `The famous app coded from scratch with React and Firebase as well as express on the backend to handle
         stripe transactions through the stripe API. Click the right icon after hovering the image and check the live site `
