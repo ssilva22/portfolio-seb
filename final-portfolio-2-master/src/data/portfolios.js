@@ -1,4 +1,4 @@
-import amazon from "../img/portImages/amazon-clone.png"
+import amazon from "../img/portImages/better-clone.png"
 import covid from "../img/portImages/COVID.png"
 import stock from "../img/portImages/R-Clone.png"
 import game from "../img/portImages/tic.png"
