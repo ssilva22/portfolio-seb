@@ -14,9 +14,8 @@ function HomePage() {
             <div className="typography">
                 <h1>Hi, I'm <span>Sebastian Silva</span></h1>
                 <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                    Atque nihil voluptates ea dolore vel 
-                    repellat? Quia tenetur non quam exercitationem. Lorem ipsum dolor sit amet.
+                   I'm a Full-Stack Web Developer who loves learning new things
+                   and is passionate about coming up with the best solutions to a problem.I love coffee and coding in React. Let's Connect!
                 </p>
                 <div className="icons">
                     <a href="https://twitter.com/Sebwebdesign" className="icon i-facebook">

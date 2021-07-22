@@ -40,11 +40,11 @@ const portfolios = [
         id: 4,
         category: 'React',
         image: amazon,
-        link1: 'https://github.com/ssilva22/amazon-clone',
+        link1: 'https://github.com/ssilva22/amazon-next',
         link2: 'https://amazon-next-beta.vercel.app/',
         title: 'Amazon-Clone Desktop',
-        text: `The famous app coded from scratch with React and Firebase as well as express on the backend to handle
-        stripe transactions through the stripe API. Click the right icon after hovering the image and check the live site `
+        text: `The famous app coded from scratch with React and Next.js on the backend as
+        well as an interactive API which uses Stripe and Firebase to handle transactions like a real e-commerce website`
     },
     {
         id: 5,

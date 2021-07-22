@@ -56,6 +56,11 @@ function Skills() {
                             width={'80%'}
                             text={'80%'}
                         />
+                           <ProgressBar 
+                            title={'Next.js'}
+                            width={'80%'}
+                            text={'80%'}
+                        />
                     </div>
                 </InnerLayout>
         </SkillsStyled>
