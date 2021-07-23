@@ -12,10 +12,11 @@ function ImageSection() {
             <div className="right-content">
                 <h4>I'm <span>Sebastian</span></h4>
                 <p className="paragraph">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem, natus quas vero enim 
-                    praesentium delectus est id fugiat ab libero adipisci recusandae at maxime veritatis! 
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi, nesciunt.
-                    
+                   I help designers, small agencies and businesses bring their
+                   ideas to life. I am outgoing, open minded and always hungry
+                   for knowledge. I love music, art, reading and going to the gym.
+                   When it comes to life I think less is more and the little things in life are
+                   what matter the most 
                 </p>
                 <div className="about-info">
                     <div className="info-title">

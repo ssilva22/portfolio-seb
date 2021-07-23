@@ -21,8 +21,13 @@ function Skills() {
                             width={'90%'}
                             text={'90%'}
                         />
+                           <ProgressBar 
+                            title={'Git/Github'}
+                            width={'90%'}
+                            text={'90%'}
+                        />
                         <ProgressBar 
-                            title={'JAVASCRIPT'}
+                            title={'JavaScript'}
                             width={'85%'}
                             text={'85%'}
                         />
@@ -38,18 +43,13 @@ function Skills() {
                         />
                         <ProgressBar 
                             title={'Node.js'}
-                            width={'95%'}
-                            text={'95%'}
+                            width={'90%'}
+                            text={'90%'}
                         />
                         <ProgressBar 
                             title={'MERN'}
                             width={'85%'}
                             text={'85%'}
-                        />
-                          <ProgressBar 
-                            title={'Firebase'}
-                            width={'90%'}
-                            text={'90%'}
                         />
                           <ProgressBar 
                             title={'AWS'}
@@ -60,6 +60,11 @@ function Skills() {
                             title={'Next.js'}
                             width={'80%'}
                             text={'80%'}
+                        />
+                           <ProgressBar 
+                            title={'Figma'}
+                            width={'85%'}
+                            text={'85%'}
                         />
                     </div>
                 </InnerLayout>

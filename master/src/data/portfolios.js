@@ -10,7 +10,7 @@ const portfolios = [
         category: 'React',
         image: covid,
         link1: 'https://github.com/ssilva22/COVID-tracker',
-        link2: 'https://www.google.com',
+        link2: 'https://covid-19-tracker-54dee.web.app',
         title: 'COVID Tracker',
         text: `COVID Tracker that uses disease.sh API to track
         all covid cases around the world in real time.Hover around the image and click the right icon to access the live site `
@@ -20,7 +20,7 @@ const portfolios = [
         category: 'Vanilla JS',
         image: game,
         link1: 'https://github.com/ssilva22/Tic-Tac-Toe',
-        link2: 'https://www.google.com',
+        link2: 'https://ssilva22.github.io/Tic-Tac-Toe/',
         title: 'Tic-Tac-Toe',
         text: `Interactive Tic-Tac-Toe game  made with html, css and Vanilla JS. Hover around the 
         image and click the right icon and have some fun!. All projects have the github repo with  full details
@@ -31,7 +31,7 @@ const portfolios = [
         category: 'React',
         image: twitt,
         link1: 'https://github.com/ssilva22/twitter-clone',
-        link2: 'https://www.google.com',
+        link2: 'https://twitter-clone-63b95.web.app',
         title: 'Twitter-Clone Desktop',
         text: `Interactive Clone of the Twitter Desktop app with the beautiful Twitter UI and included functionality
         that alllows you to make posts.  `
@@ -51,7 +51,7 @@ const portfolios = [
         category: 'React',
         image: stock,
         link1: 'https://github.com/ssilva22/Robinhood-clone',
-        link2: 'https://www.google.com',
+        link2: 'https://robinhood-clone-d2dd5.web.app',
         title: 'Stocks App Desktop',
         text: `Design inspired by the Robinhood App with the same beautiful and informative UI
         that covers all of your needs as an investor.`

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import styled from 'styled-components';
 import {MainLayout, InnerLayout} from '../styles/Layouts';
 import Title from '../Components/Title';
@@ -7,8 +7,41 @@ import PhoneIcon from '@material-ui/icons/Phone';
 import EmailIcon from '@material-ui/icons/Email';
 import LocationOnIcon from '@material-ui/icons/LocationOn';
 import ContactItem from '../Components/ContactItem';
+import db from "../firebase";
+import "../Pages/Contact.css";
 
 function ContactPage() {
+    const [name,setName] = useState("");
+    const [emailForm,setEmail]= useState("");
+    const [subject,setSubject]= useState("");
+    const [message,setMessage]=useState("");
+
+
+    const handleSubmit = (e) => {
+        e.preventDefault();
+
+        db.collection('contacts').add({
+            name:name,
+            email:emailForm,
+            subject:subject,
+            message:message,
+        })
+        .then(() =>{
+           alert('Message has been submitted') 
+        })
+        .catch((error)=>{
+            alert(error.message);
+        });
+
+        setName("");
+        setEmail("");
+        setSubject("");
+        setMessage("");
+
+    }
+    
+
+
     const phone = <PhoneIcon />
     const email = <EmailIcon />
     const location = <LocationOnIcon />
@@ -21,32 +54,45 @@ function ContactPage() {
                     <div className="contact-title">
                         <h4>Let's Build Something Together!</h4>
                     </div>
-                    <form  className="form">
+                    <form  className="form" onSubmit={handleSubmit}>
                         <div className="form-field">
                             <label htmlFor="name"  >Enter your name*</label>
-                            <input type="text" id="name" />
+                            <input type="text" id="name" 
+                            value={name} 
+                            onChange={((e) => setName(e.target.value))}
+                            />
                         </div>
                         <div className="form-field">
                             <label htmlFor="email"  >Enter your email*</label>
-                            <input type="email" id="email" />
+                            <input type="email" id="email" 
+                            value={emailForm}
+                            onChange={((e) => setEmail(e.target.value))} />
                         </div>
                         <div className="form-field">
                             <label htmlFor="subject"  >Enter your subject</label>
-                            <input type="text" id="subject" />
+                            <input type="text" id="subject" 
+                            value={subject}
+                            onChange={((e) => setSubject(e.target.value))}
+                            />
                         </div>
                         <div className="form-field">
                             <label htmlFor="text-area">Enter your Message*</label>
-                            <textarea name="textarea" id="textarea" cols="30" rows="10"></textarea>
+                            <textarea name="textarea" id="textarea" cols="30" rows="10"
+                             value={message}
+                             onChange={((e) => setMessage(e.target.value))}
+                             ></textarea>
                         </div>
                         <div className="form-field f-button">
-                            <PrimaryButton title={'Send Email'} />
+
+                            <button className="button" type="submit">Send Email</button>
+                            
                         </div>
                     </form>
                 </div>
                 <div className="right-content">
                     <ContactItem title={'Phone'} icon={phone} cont1={'754-217-1438'} />
                     <ContactItem title={'Email'} icon={email} cont1={'sebastianwebp@gmail.com'} cont2={''} />
-                    <ContactItem title={'Address'} icon={location} cont1={'1150 sw 118th Terrace Davie,Fl 33325'} cont2={'Miami,fl'} />
+                    <ContactItem title={'Address'} icon={location} cont1={'1150 sw 118th Terrace Davie,Fl 33325'}  />
                     
                 </div>
             </InnerLayout>
@@ -54,6 +100,8 @@ function ContactPage() {
         </MainLayout>
     )
 }
+
+
 
 const ContactPageStyled = styled.section`
     .contact-section{
