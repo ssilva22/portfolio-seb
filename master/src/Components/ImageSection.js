@@ -34,7 +34,6 @@ function ImageSection() {
                         <p>: Miami-florida</p>
                     </div>
                 </div>
-                <PrimaryButton title={'Download Cv'} />
             </div>
         </ImageSectionStyled>
     )
